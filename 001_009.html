@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- size and scroll-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="001_009.js" defer></script>
+</head>
+<body>
+    <div id="example">
+        Существует множество JavaScript-свойств, которые позволяют считывать информацию об элементе: ширину, высоту и другие геометрические характеристики. В этой главе мы будем называть их «метрики».
+        Они часто требуются, когда нам нужно передвигать или позиционировать элементы с помощью JavaScript.
+        У элемента есть рамка (border), внутренний отступ (padding) и прокрутка. Полный набор характеристик. Обратите внимание, тут нет внешних отступов (margin), потому что они не являются частью элемента, для них нет особых JavaScript-свойств.
+    </div>
+    <input type="button" value="show metrics" onclick="showMetrics()"/>
+    <div id="metrics"></div>
+    <style>
+        #example
+        {
+            width: 300px;
+            height: 200px;
+            border: 25px solid #E8C48F;
+            padding: 20px;
+            overflow: auto;
+        }
+    </style>
+</body>
+</html>
