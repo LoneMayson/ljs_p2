@@ -17,3 +17,20 @@ function showMetrics()
     var elem = document.getElementById("metrics");
     elem.innerText = res;
 }
+
+// kt: document.elementFromPoint(x,y)
+
+function showMessage()
+{
+    var elem = document.getElementById("buttonShowMessage");
+    var coords = elem.getBoundingClientRect();
+
+    var message = document.createElement("div");
+    message.style.cssText = "position: absolute; color: red";
+    message.style.left = coords.left + window.scrollX + "px";
+    message.style.top = coords.bottom  + window.scrollY + "px";
+
+    message.innerHTML = "message";
+
+    document.body.append(message);
+}
