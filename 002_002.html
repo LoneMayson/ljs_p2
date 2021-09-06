@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- bubbling and capturing-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="002_002.js" defer></script>
+</head>
+<body>
+    <style>
+        .bubble
+        {
+            margin: 10px;
+            border: 1px solid blue;
+        }
+    </style>
+    <form class="bubble" onclick="bubble(event)">FORM
+    <div class="bubble" onclick="bubble(event)">DIV
+        <p class="bubble" onclick="bubble(event)">P</p>
+    </div>
+    </form>
+    <input type="button" value="clear" onclick="clearBubbleInfo()"/>
+    <div id="bubble-info"></div>
+</body>
+</html>

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- default browser action-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="002_004.js" defer></script>
 </head>
 <body>
-    <script>location.href="002_004.html"</script>
+    <a href="wikipedia.org" onclick="return false">wikipedia.org</a>
+    <a href="wikipedia.org" onclick="event.preventDefault()">wikipedia.org</a>
 </body>
 </html>
